@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Sohaib Akram — Logistics, Operations &amp; Business Management</title>
+
+  <!-- Open Graph & Sharing Metadata -->
+  <meta name="description" content="Logistics, warehouse, and operations professional with cross-border experience in Pakistan, the UAE, and Germany. M.A. European Business Management candidate at TH Wildau." />
+  <meta property="og:title" content="Muhammad Sohaib Akram — Logistics, Operations & Business Management" />
+  <meta property="og:description" content="Cross-border supply chain, warehouse operations, and financial record-keeping across Pakistan, UAE, and Germany." />
+  <meta property="og:type" content="website" />
+
+  <!-- Custom SVG Monogram Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%234F6F64'/%3E%3Ctext x='32' y='43' text-anchor='middle' fill='%23F6F4F0' font-family='Plus Jakarta Sans, sans-serif' font-weight='700' font-size='34'%3ES%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            paper: '#F6F4F0',
+            charcoal: '#1E2022',
+            sage: {
+              DEFAULT: '#4F6F64',
+              light: '#6F9387',
+              dark: '#3B544B',
+            },
+            terracotta: {
+              DEFAULT: '#4A6FA5',
+              light: '#6B8FC7',
+              dark: '#385785',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* =====================================================================
+       EYE-FRIENDLY COLOR VARIABLES & BASE RESETS
+       ===================================================================== */
+    :root {
+      --bg-main: #F6F4F0;
+      --bg-surface: #FFFFFF;
+      --bg-subtle: #EDEAE2;
+      --text-main: #1E2022;
+      --text-muted: #5C6066;
+      --border-subtle: rgba(30, 32, 34, 0.1);
+      --lounge-bg: #1E2022;
+      --lounge-text: #F6F4F0;
+    }
+
+    html.dark {
+      --bg-main: #16181A;
+      --bg-surface: #1E2124;
+      --bg-subtle: #262A2E;
+      --text-main: #EDEBE6;
+      --text-muted: #9DA2A8;
+      --border-subtle: rgba(237, 235, 230, 0.11);
+      --lounge-bg: #111315;
+      --lounge-text: #EDEBE6;
+    }
+
+    html, body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+
+    /* =====================================================================
+       ORGANIC BLOB MORPHING, SCROLL REVEAL & AMBIENT ANIMATIONS
+       ===================================================================== */
+    @keyframes morphBlob {
+      0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(2deg); }
+    }
+
+    .organic-blob {
+      animation: morphBlob 14s ease-in-out infinite;
+    }
+
+    .float-slow {
+      animation: floatSlow 7s ease-in-out infinite;
+    }
+
+    /* Progressive Scroll Reveal */
+    .reveal-section {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal-section.reveal-pending {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    /* Equalizer Animation for Music Player */
+    @keyframes eqPulse {
+      0%, 100% { transform: scaleY(0.25); }
+      50% { transform: scaleY(1); }
+    }
+
+    .eq-bar {
+      transform-origin: bottom;
+      animation: eqPulse 0.9s ease-in-out infinite;
+      animation-play-state: paused;
+    }
+
+    .eq-playing .eq-bar {
+      animation-play-state: running;
+    }
+
+    /* Animated Flight Path Dash */
+    @keyframes flightDash {
+      to {
+        stroke-dashoffset: -48;
+      }
+    }
+
+    .flight-arc-animated {
+      stroke-dasharray: 6 6;
+      animation: flightDash 2.2s linear infinite;
+    }
+
+    /* Animated Throwing Dart Flight & Impact */
+    @keyframes dartFlyIn {
+      0% {
+        opacity: 0;
+        transform: translate(42px, 68px) scale(2.35) rotate(-18deg);
+      }
+      70% {
+        opacity: 1;
+        transform: translate(-2px, -3px) scale(0.95) rotate(2deg);
+      }
+      85% {
+        transform: translate(1px, 1px) scale(1.03) rotate(-1deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0px, 0px) scale(1) rotate(0deg);
+      }
+    }
+
+    @keyframes boardImpactShake {
+      0%, 100% { transform: scale(1); }
+      35% { transform: scale(0.985) rotate(-0.6deg); }
+      70% { transform: scale(1.006) rotate(0.4deg); }
+    }
+
+    .dart-throw-anim {
+      animation: dartFlyIn 0.28s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .board-hit-shake {
+      animation: boardImpactShake 0.22s ease-out;
+    }
+
+    /* =====================================================================
+       CV DROPDOWN MENU STYLING (MATCHING SAGE & STEEL-BLUE PALETTE)
+       ===================================================================== */
+    .cv-dropdown-panel {
+      background-color: var(--bg-surface);
+      border-color: var(--border-subtle);
+      color: var(--text-main);
+      transform-origin: top left;
+      transition: opacity 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+                  visibility 0.18s ease;
+    }
+
+    .cv-dropdown-panel.cv-closed {
+      opacity: 0;
+      transform: translateY(-6px) scale(0.97);
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .cv-dropdown-panel.cv-open {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .cv-dropdown-item {
+      transition: background-color 0.16s ease, color 0.16s ease;
+    }
+
+    .cv-dropdown-item:hover,
+    .cv-dropdown-item:focus-visible {
+      background-color: var(--bg-subtle);
+      outline: none;
+    }
+
+    /* =====================================================================
+       MINIMALIST PRECISION DOT + LAGGING RING CURSOR (DESKTOP ONLY)
+       ===================================================================== */
+    @media (hover: hover) and (pointer: fine) {
+      html, body, a, button, input, textarea, [role="button"], .skill-pill, .map-waypoint {
+        cursor: none !important;
+      }
+
+      #cursor-dot,
+      #cursor-ring {
+        display: block;
+      }
+    }
+
+    #cursor-dot {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      margin-left: -3px;
+      margin-top: -3px;
+      border-radius: 9999px;
+      background-color: #4A6FA5;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0;
+      will-change: transform, opacity;
+      transition: background-color 0.2s ease, opacity 0.2s ease, transform 0.12s ease;
+    }
+
+    #cursor-ring {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      margin-left: -17px;
+      margin-top: -17px;
+      border-radius: 9999px;
+      border: 1.5px solid rgba(79, 111, 100, 0.55);
+      background-color: rgba(79, 111, 100, 0.04);
+      pointer-events: none;
+      z-index: 9998;
+      opacity: 0;
+      will-change: transform, width, height, margin, opacity;
+      transition: width 0.16s cubic-bezier(0.22, 1, 0.36, 1),
+                  height 0.16s cubic-bezier(0.22, 1, 0.36, 1),
+                  margin 0.16s cubic-bezier(0.22, 1, 0.36, 1),
+                  border-color 0.15s ease,
+                  background-color 0.15s ease,
+                  opacity 0.15s ease;
+    }
+
+    html.dark #cursor-ring {
+      border-color: rgba(111, 147, 135, 0.62);
+      background-color: rgba(111, 147, 135, 0.06);
+    }
+
+    /* Soft Radial Expansion on Links, Buttons & Interactive Pills */
+    #cursor-ring.cursor-hover {
+      width: 48px;
+      height: 48px;
+      margin-left: -24px;
+      margin-top: -24px;
+      border-color: rgba(74, 111, 165, 0.78);
+      background-color: rgba(74, 111, 165, 0.12);
+    }
+
+    #cursor-dot.cursor-hover {
+      background-color: #4F6F64;
+    }
+
+    html.dark #cursor-dot.cursor-hover {
+      background-color: #6F9387;
+    }
+
+    /* Dashed Crosshair Reticle Over Flight Trajectory Map & Dartboard */
+    #cursor-ring.cursor-reticle {
+      width: 44px;
+      height: 44px;
+      margin-left: -22px;
+      margin-top: -22px;
+      border-style: dashed;
+      border-width: 1.5px;
+      border-color: rgba(74, 111, 165, 0.88);
+      background-color: rgba(74, 111, 165, 0.08);
+    }
+
+    /* Subtle Crosshair Ticks inside Reticle */
+    #cursor-ring.cursor-reticle::before,
+    #cursor-ring.cursor-reticle::after {
+      content: '';
+      position: absolute;
+      background-color: rgba(74, 111, 165, 0.65);
+    }
+
+    #cursor-ring.cursor-reticle::before {
+      top: 50%;
+      left: 5px;
+      right: 5px;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    #cursor-ring.cursor-reticle::after {
+      left: 50%;
+      top: 5px;
+      bottom: 5px;
+      width: 1px;
+      transform: translateX(-50%);
+    }
+
+    /* Delicate Expanding Click Ripple */
+    @keyframes cursorClickRipple {
+      0% {
+        width: 12px;
+        height: 12px;
+        margin-left: -6px;
+        margin-top: -6px;
+        opacity: 0.65;
+      }
+      100% {
+        width: 52px;
+        height: 52px;
+        margin-left: -26px;
+        margin-top: -26px;
+        opacity: 0;
+      }
+    }
+
+    .cursor-click-ripple {
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-radius: 9999px;
+      border: 1.5px solid rgba(74, 111, 165, 0.72);
+      pointer-events: none;
+      z-index: 9997;
+      animation: cursorClickRipple 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-main);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(79, 111, 100, 0.35);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(79, 111, 100, 0.6);
+    }
+
+    /* =====================================================================
+       CLEAN PRINT / PDF CV STYLESHEET (NO PHONE NUMBER)
+       ===================================================================== */
+    @media print {
+      header,
+      #constellation-canvas,
+      #cursor-dot,
+      #cursor-ring,
+      #toast,
+      #lounge,
+      #direct-email-form,
+      .no-print {
+        display: none !important;
+      }
+
+      html, body {
+        background: #FFFFFF !important;
+        color: #111111 !important;
+        font-size: 11pt;
+      }
+
+      main {
+        padding-top: 0 !important;
+      }
+
+      section {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        background: transparent !important;
+      }
+
+      .reveal-section {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="antialiased selection:bg-terracotta/20 selection:text-terracotta">
+
+  <!-- Interactive Connecting-Dots Constellation Background -->
+  <canvas id="constellation-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-0" aria-hidden="true"></canvas>
+
+  <!-- =====================================================================
+       FLOATING GLASS NAVIGATION BAR
+       ===================================================================== -->
+  <header class="fixed top-4 inset-x-0 z-40 px-4 sm:px-6 pointer-events-none">
+    <nav aria-label="Primary Navigation" class="max-w-5xl mx-auto pointer-events-auto flex items-center justify-between px-4 sm:px-6 py-3 rounded-full backdrop-blur-md shadow-sm border transition-colors duration-300"
+         style="background-color: color-mix(in srgb, var(--bg-surface) 84%, transparent); border-color: var(--border-subtle);">
+
+      <!-- Brand Monogram -->
+      <a href="#top" class="flex items-center gap-2.5 group">
+        <span class="w-8 h-8 rounded-full bg-sage text-white flex items-center justify-center font-bold text-base shadow-sm group-hover:bg-terracotta transition-colors">
+          S
+        </span>
+        <span class="font-semibold tracking-tight text-sm sm:text-base">
+          Sohaib Akram
+        </span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium" style="color: var(--text-muted);">
+        <a href="#trajectory" data-i18n="nav_trajectory" class="hover:text-terracotta transition-colors">Trajectory</a>
+        <a href="#journey" data-i18n="nav_experience" class="hover:text-terracotta transition-colors">Experience</a>
+        <a href="#toolkit" data-i18n="nav_toolkit" class="hover:text-terracotta transition-colors">Toolkit</a>
+        <a href="#lounge" data-i18n="nav_lounge" class="hover:text-terracotta transition-colors">Off the Clock</a>
+        <a href="#contact" data-i18n="nav_contact" class="hover:text-terracotta transition-colors">Contact</a>
+      </div>
+
+      <!-- Right Controls: Language Switcher (EN/DE), Theme Toggle & Mobile Hamburger -->
+      <div class="flex items-center gap-2">
+        <button id="lang-toggle" type="button" aria-label="Switch Language between English and German"
+                class="px-3 py-1.5 rounded-full text-xs font-mono font-semibold border transition-all hover:border-terracotta/50 hover:text-terracotta"
+                style="background-color: var(--bg-subtle); border-color: var(--border-subtle);">
+          EN <span class="opacity-45">/</span> DE
+        </button>
+
+        <button id="theme-toggle" type="button" aria-label="Toggle Light or Dark Mode"
+                class="p-2.5 rounded-full border transition-all hover:border-terracotta/50 hover:text-terracotta"
+                style="background-color: var(--bg-subtle); border-color: var(--border-subtle);">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg id="icon-sun" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg id="icon-moon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="mobile-menu-btn" type="button" aria-label="Open Navigation Menu" aria-expanded="false"
+                class="md:hidden p-2.5 rounded-full border transition-colors"
+                style="background-color: var(--bg-subtle); border-color: var(--border-subtle);">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden max-w-5xl mx-auto mt-2 pointer-events-auto rounded-3xl p-4 shadow-lg border backdrop-blur-md"
+         style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+      <div class="flex flex-col gap-2 text-sm font-medium">
+        <a href="#trajectory" data-i18n="mob_trajectory" class="mobile-nav-link px-4 py-2.5 rounded-2xl hover:bg-sage/10 transition-colors">Trajectory (PK → UAE → DE)</a>
+        <a href="#journey" data-i18n="mob_experience" class="mobile-nav-link px-4 py-2.5 rounded-2xl hover:bg-sage/10 transition-colors">Experience &amp; Education</a>
+        <a href="#toolkit" data-i18n="mob_toolkit" class="mobile-nav-link px-4 py-2.5 rounded-2xl hover:bg-sage/10 transition-colors">Skills &amp; Languages</a>
+        <a href="#lounge" data-i18n="mob_lounge" class="mobile-nav-link px-4 py-2.5 rounded-2xl hover:bg-sage/10 transition-colors">Off the Clock (Darts, Cricket &amp; Music)</a>
+        <a href="#contact" data-i18n="mob_contact" class="mobile-nav-link px-4 py-2.5 rounded-2xl hover:bg-sage/10 transition-colors">Say Hello</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="relative z-10">
+    <!-- =====================================================================
+         1. ASYMMETRIC ORGANIC HERO SECTION
+         ===================================================================== -->
+    <section class="relative pt-32 pb-20 sm:pt-40 sm:pb-28 px-4 sm:px-6 overflow-visible">
+      <!-- Ambient Organic Blobs -->
+      <div class="pointer-events-none absolute -top-24 -right-24 w-80 h-80 sm:w-[28rem] sm:h-[28rem] rounded-full bg-sage/15 blur-3xl organic-blob"></div>
+      <div class="pointer-events-none absolute top-40 -left-28 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-terracotta/12 blur-3xl organic-blob" style="animation-delay: -5s;"></div>
+
+      <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <!-- Left Column: Narrative & Intro -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border"
+               style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+            <span class="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
+            <span data-i18n="hero_badge">M.A. European Business Management · TH Wildau, Germany</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold tracking-tight leading-[1.15] sm:whitespace-nowrap">
+            Muhammad Sohaib <span class="text-slate-900 dark:text-white">Akram.</span>
+          </h1>
+
+          <p data-i18n="hero_intro" class="text-base sm:text-lg leading-relaxed max-w-xl" style="color: var(--text-muted);">
+            I bring six years of hands-on experience keeping logistics, inventory, and financial operations running smoothly across <strong class="font-semibold" style="color: var(--text-main);">Pakistan</strong>, the <strong class="font-semibold" style="color: var(--text-main);">UAE</strong>, and now <strong class="font-semibold" style="color: var(--text-main);">Germany</strong>. Currently pursuing my M.A. in European Business Management at TH Wildau, I thrive where structured processes meet day-to-day operational execution.
+          </p>
+
+          <!-- Floating Action Pills -->
+          <div class="no-print flex flex-wrap items-center gap-3 pt-2">
+            <a href="#trajectory" class="magnetic-btn inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-sage text-white text-sm font-semibold shadow-sm hover:bg-sage-dark transition-all">
+              <span data-i18n="cta_route">Explore My Route</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+
+            <!-- Interactive Dual-Language PDF CV Dropdown -->
+            <div id="cv-dropdown-wrapper" class="relative inline-block">
+              <button id="download-cv-btn" type="button"
+                      aria-haspopup="true" aria-expanded="false" aria-controls="cv-dropdown-menu"
+                      class="magnetic-btn inline-flex items-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold border transition-all hover:border-sage hover:text-sage"
+                      style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"></path>
+                </svg>
+                <span data-i18n="cta_cv">Save CV (PDF) ▾</span>
+              </button>
+
+              <!-- Dropdown Menu with English & German CV Options -->
+              <div id="cv-dropdown-menu" role="menu" aria-labelledby="download-cv-btn"
+                   class="cv-dropdown-panel cv-closed absolute left-0 mt-2.5 w-72 rounded-2xl border shadow-xl z-30 overflow-hidden backdrop-blur-md">
+                <div class="px-4 py-2.5 border-b text-[11px] font-mono uppercase tracking-wider"
+                     style="border-color: var(--border-subtle); color: var(--text-muted);"
+                     data-i18n="cv_menu_header">
+                  Select CV Language
+                </div>
+
+                <a href="Muhammad%20Sohaib%20Cv.pdf"
+                   download="Muhammad_Sohaib_Akram_CV_EN.pdf"
+                   role="menuitem"
+                   class="cv-dropdown-item flex items-center justify-between gap-3 px-4 py-3 text-sm font-medium border-b"
+                   style="border-color: var(--border-subtle);">
+                  <span class="flex items-center gap-2.5">
+                    <span class="px-2 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-sage/15 text-sage">EN</span>
+                    <span data-i18n="cv_opt_en">English CV (PDF)</span>
+                  </span>
+                  <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 18h16"></path>
+                  </svg>
+                </a>
+
+                <a href="Muhammad%20Sohaib%20Akram%20CV.pdf"
+                   download="Muhammad_Sohaib_Akram_CV_DE.pdf"
+                   role="menuitem"
+                   class="cv-dropdown-item flex items-center justify-between gap-3 px-4 py-3 text-sm font-medium">
+                  <span class="flex items-center gap-2.5">
+                    <span class="px-2 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-terracotta/15 text-terracotta">DE</span>
+                    <span data-i18n="cv_opt_de">German CV / Lebenslauf (PDF)</span>
+                  </span>
+                  <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 18h16"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <a href="#lounge" class="magnetic-btn inline-flex items-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold border transition-all hover:border-terracotta/50 hover:text-terracotta"
+               style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+              <span data-i18n="cta_lounge">Off the Clock</span>
+            </a>
+          </div>
+
+          <!-- Open Typographic Highlights (Non-Boxy) -->
+          <div class="pt-6 border-t flex flex-wrap gap-8 sm:gap-12" style="border-color: var(--border-subtle);">
+            <div>
+              <p class="font-bold text-2xl sm:text-3xl text-sage" data-i18n="stat_countries_val">3 Countries</p>
+              <p class="text-xs uppercase tracking-wider mt-1" style="color: var(--text-muted);" data-i18n="stat_countries_lbl">PK · UAE · Germany</p>
+            </div>
+            <div>
+              <p class="font-bold text-2xl sm:text-3xl text-terracotta" data-i18n="stat_years_val">6+ Years</p>
+              <p class="text-xs uppercase tracking-wider mt-1" style="color: var(--text-muted);" data-i18n="stat_years_lbl">Logistics, Ops &amp; Finance</p>
+            </div>
+            <div>
+              <p class="font-bold text-2xl sm:text-3xl">C1 / A2</p>
+              <p class="text-xs uppercase tracking-wider mt-1" style="color: var(--text-muted);" data-i18n="stat_lang_lbl">English &amp; German</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Organic Emblem & Floating Route Badges -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-72 h-72 sm:w-80 sm:h-80 flex items-center justify-center">
+            <!-- Soft Morphing Backdrop -->
+            <div class="absolute inset-0 bg-gradient-to-br from-sage/25 via-terracotta/20 to-sage/10 organic-blob"></div>
+
+            <!-- Inner Organic Portrait Frame with Monogram Fallback -->
+            <div class="relative w-60 h-60 sm:w-64 sm:h-64 rounded-full border-2 overflow-hidden shadow-lg backdrop-blur-sm flex items-center justify-center"
+                 style="background-color: color-mix(in srgb, var(--bg-surface) 88%, transparent); border-color: var(--border-subtle);">
+              <img id="hero-profile-photo"
+                   src="./profile.jpg"
+                   alt="Muhammad Sohaib Akram"
+                   class="hidden w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                   onload="this.classList.remove('hidden'); document.getElementById('hero-monogram-fallback').classList.add('hidden');"
+                   onerror="this.classList.add('hidden'); document.getElementById('hero-monogram-fallback').classList.remove('hidden');" />
+
+              <!-- Monogram Medallion (Displays in Preview & Until profile.jpg is Saved Locally) -->
+              <div id="hero-monogram-fallback" class="w-full h-full flex flex-col items-center justify-center text-center p-6">
+                <span class="font-mono text-xs uppercase tracking-widest text-terracotta mb-2" data-i18n="medallion_tag">Operations &amp; Supply Chain</span>
+                <span class="font-bold tracking-tight text-4xl sm:text-5xl leading-none mb-2">MSA</span>
+                <span class="text-xs leading-relaxed" style="color: var(--text-muted);" data-i18n="medallion_desc">
+                  Precision in dispatch, stock control &amp; structured reporting.
+                </span>
+              </div>
+            </div>
+
+            <!-- Floating Pill 1: Current Base -->
+            <div class="float-slow absolute -top-2 -left-3 sm:-left-6 px-4 py-2 rounded-full text-xs font-medium shadow-md border flex items-center gap-2"
+                 style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+              <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+              <span>Wildau, Germany</span>
+            </div>
+
+            <!-- Floating Pill 2: Graduating -->
+            <div class="float-slow absolute -bottom-2 -right-2 sm:-right-5 px-4 py-2 rounded-full text-xs font-medium shadow-md border flex items-center gap-2"
+                 style="background-color: var(--bg-surface); border-color: var(--border-subtle); animation-delay: -3s;">
+              <span class="w-2 h-2 rounded-full bg-sage"></span>
+              <span>M.A. Candidate ’27</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curved Wave Transition -->
+    <div class="w-full overflow-hidden leading-none" style="color: var(--bg-subtle);">
+      <svg class="w-full h-10 sm:h-14 block" viewBox="0 0 1440 74" preserveAspectRatio="none">
+        <path fill="currentColor" d="M0,32 C360,84 1080,-12 1440,42 L1440,74 L0,74 Z"></path>
+      </svg>
+    </div>
+
+    <!-- =====================================================================
+         2. INTERCONTINENTAL TRAJECTORY (PAKISTAN -> UAE -> GERMANY)
+         ===================================================================== -->
+    <section id="trajectory" class="reveal-section py-20 sm:py-24 px-4 sm:px-6 transition-colors duration-300" style="background-color: var(--bg-subtle);">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-widest text-terracotta" data-i18n="traj_eyebrow">Global Trajectory</span>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mt-1" data-i18n="traj_heading">
+              Cross-Border Experience <span class="text-sage">&amp; Global Footprint.</span>
+            </h2>
+          </div>
+          <p class="text-xs sm:text-sm max-w-xs" style="color: var(--text-muted);" data-i18n="traj_sub">
+            Select any waypoint on the flight path to inspect each chapter of my cross-border career.
+          </p>
+        </div>
+
+        <!-- Interactive Map Canvas -->
+        <div class="relative rounded-[2rem] p-4 sm:p-8 border shadow-sm overflow-hidden"
+             style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+          <svg id="flight-map-svg" viewBox="0 0 900 380" class="w-full h-auto select-none" role="img" aria-label="Interactive flight trajectory map from Lahore, Pakistan to Ajman, UAE to Wildau, Germany">
+            <defs>
+              <linearGradient id="routeGrad" x1="100%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#4A6FA5" />
+                <stop offset="50%" stop-color="#4F6F64" />
+                <stop offset="100%" stop-color="#4A6FA5" />
+              </linearGradient>
+              <filter id="glowSoft" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- Subtle Latitude / Longitude Grid -->
+            <g stroke="currentColor" stroke-opacity="0.06" stroke-width="1">
+              <line x1="0" y1="95" x2="900" y2="95" />
+              <line x1="0" y1="190" x2="900" y2="190" />
+              <line x1="0" y1="285" x2="900" y2="285" />
+              <line x1="225" y1="0" x2="225" y2="380" />
+              <line x1="450" y1="0" x2="450" y2="380" />
+              <line x1="675" y1="0" x2="675" y2="380" />
+            </g>
+
+            <!-- Stylized Eurasian / Arabian Continent Silhouettes -->
+            <g fill="#4F6F64" fill-opacity="0.11" stroke="#4F6F64" stroke-opacity="0.22" stroke-width="1">
+              <!-- Europe Silhouette -->
+              <path d="M120,120 L165,85 L235,70 L300,82 L345,112 L330,152 L285,168 L245,162 L210,178 L168,172 L135,148 Z" />
+              <!-- Arabian Peninsula -->
+              <path d="M405,215 L455,205 L515,235 L535,280 L488,318 L432,302 L402,255 Z" />
+              <!-- South Asia / Pakistan & India -->
+              <path d="M610,175 L678,162 L748,185 L785,235 L742,315 L698,325 L665,255 L615,222 Z" />
+            </g>
+
+            <!-- Base Faint Flight Paths -->
+            <path d="M 702 212 Q 612 195 512 254" fill="none" stroke="#4A6FA5" stroke-opacity="0.25" stroke-width="2" />
+            <path d="M 512 254 Q 395 135 268 118" fill="none" stroke="#4F6F64" stroke-opacity="0.25" stroke-width="2" />
+
+            <!-- Active Animated Flight Arcs -->
+            <path id="arc-pk-uae" d="M 702 212 Q 612 195 512 254" fill="none" stroke="url(#routeGrad)" stroke-width="3" stroke-linecap="round" class="flight-arc-animated" />
+            <path id="arc-uae-de" d="M 512 254 Q 395 135 268 118" fill="none" stroke="url(#routeGrad)" stroke-width="3" stroke-linecap="round" class="flight-arc-animated" />
+
+            <!-- Animated Gliding Plane Along the Route -->
+            <g id="flight-plane-marker" transform="translate(268, 118)" filter="url(#glowSoft)" aria-hidden="true">
+              <circle cx="0" cy="0" r="11" fill="#4A6FA5" fill-opacity="0.22" />
+              <path d="M-6,0 L6,-4 L3,0 L6,4 Z" fill="#4A6FA5" stroke="#FFFFFF" stroke-width="0.9" />
+            </g>
+
+            <!-- Waypoint 1: Lahore, Pakistan -->
+            <g class="map-waypoint" data-stop="pk" role="button" tabindex="0" aria-label="Lahore, Pakistan">
+              <circle cx="702" cy="212" r="18" fill="#4A6FA5" fill-opacity="0.15" class="waypoint-pulse" />
+              <circle cx="702" cy="212" r="7" fill="#4A6FA5" stroke="#FFFFFF" stroke-width="2" filter="url(#glowSoft)" />
+              <text x="702" y="242" text-anchor="middle" fill="currentColor" font-size="13" font-weight="700">Lahore, PK</text>
+              <text x="702" y="258" text-anchor="middle" fill="currentColor" fill-opacity="0.6" font-size="11">2018 – 2023</text>
+            </g>
+
+            <!-- Waypoint 2: Ajman, UAE -->
+            <g class="map-waypoint" data-stop="uae" role="button" tabindex="0" aria-label="Ajman, United Arab Emirates">
+              <circle cx="512" cy="254" r="18" fill="#4F6F64" fill-opacity="0.16" class="waypoint-pulse" />
+              <circle cx="512" cy="254" r="7" fill="#4F6F64" stroke="#FFFFFF" stroke-width="2" filter="url(#glowSoft)" />
+              <text x="512" y="284" text-anchor="middle" fill="currentColor" font-size="13" font-weight="700">Ajman, UAE</text>
+              <text x="512" y="300" text-anchor="middle" fill="currentColor" fill-opacity="0.6" font-size="11">2024 – 2025</text>
+            </g>
+
+            <!-- Waypoint 3: Wildau, Germany -->
+            <g class="map-waypoint" data-stop="de" role="button" tabindex="0" aria-label="Wildau, Germany">
+              <circle cx="268" cy="118" r="20" fill="#4A6FA5" fill-opacity="0.2" class="waypoint-pulse" />
+              <circle cx="268" cy="118" r="8" fill="#4A6FA5" stroke="#FFFFFF" stroke-width="2.5" filter="url(#glowSoft)" />
+              <text x="268" y="88" text-anchor="middle" fill="currentColor" font-size="13" font-weight="700">Wildau, DE</text>
+              <text x="268" y="103" text-anchor="middle" fill="currentColor" fill-opacity="0.6" font-size="11">Present – 2027</text>
+            </g>
+          </svg>
+
+          <!-- Interactive Stop Selector Tabs & Active Leg Story -->
+          <div class="mt-6 pt-6 border-t grid grid-cols-1 lg:grid-cols-12 gap-6 items-center" style="border-color: var(--border-subtle);">
+            <div class="lg:col-span-5 flex flex-wrap gap-2">
+              <button type="button" data-stop-btn="pk" class="stop-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border transition-all"
+                      style="border-color: var(--border-subtle);">
+                01 · Lahore, PK
+              </button>
+              <button type="button" data-stop-btn="uae" class="stop-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border transition-all"
+                      style="border-color: var(--border-subtle);">
+                02 · Ajman, UAE
+              </button>
+              <button type="button" data-stop-btn="de" class="stop-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-sage text-white border border-sage transition-all">
+                03 · Wildau, DE
+              </button>
+            </div>
+
+            <div id="stop-detail-panel" class="lg:col-span-7">
+              <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-terracotta">
+                <span id="stop-period">Present – Expected 2027</span>
+                <span>•</span>
+                <span id="stop-location">Brandenburg, Germany</span>
+              </div>
+              <h3 id="stop-title" class="text-lg sm:text-xl font-bold mt-1">
+                M.A. European Business Management · Technische Hochschule Wildau
+              </h3>
+              <p id="stop-desc" class="text-sm mt-1.5 leading-relaxed" style="color: var(--text-muted);">
+                Advancing international business strategy, European regulatory frameworks, and structured process management while seeking logistics, warehouse, and operations opportunities in Germany.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curved Wave Transition -->
+    <div class="w-full overflow-hidden leading-none rotate-180" style="color: var(--bg-subtle);">
+      <svg class="w-full h-10 sm:h-14 block" viewBox="0 0 1440 74" preserveAspectRatio="none">
+        <path fill="currentColor" d="M0,32 C360,84 1080,-12 1440,42 L1440,74 L0,74 Z"></path>
+      </svg>
+    </div>
+
+    <!-- =====================================================================
+         3. OPEN EDITORIAL EXPERIENCE & EDUCATION TIMELINE
+         ===================================================================== -->
+    <section id="journey" class="reveal-section py-20 sm:py-28 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-14">
+          <span class="font-mono text-xs uppercase tracking-widest text-sage" data-i18n="exp_eyebrow">Career &amp; Academic Path</span>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mt-1" data-i18n="exp_heading">
+            Experience <span class="text-terracotta">&amp; Education.</span>
+          </h2>
+        </div>
+
+        <!-- Open Vertical Timeline (No Heavy Cards) -->
+        <div class="relative pl-6 sm:pl-10 border-l-2 space-y-12" style="border-color: var(--border-subtle);">
+
+          <!-- Entry 1: M.A. TH Wildau -->
+          <article class="relative group">
+            <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-terracotta ring-4 ring-terracotta/20"></span>
+            <div class="flex flex-wrap items-center gap-2 text-xs font-mono uppercase tracking-wider text-terracotta">
+              <span>Expected 2027</span>
+              <span>·</span>
+              <span>Wildau, Germany</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-terracotta/10 text-terracotta font-sans normal-case font-semibold">Education</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold mt-1">M.A. in European Business Management</h3>
+            <p class="text-sm font-medium mt-0.5" style="color: var(--text-muted);">Technische Hochschule Wildau</p>
+          </article>
+
+          <!-- Entry 2: Accountant - Mahir Interiors -->
+          <article class="relative group">
+            <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-sage ring-4 ring-sage/20"></span>
+            <div class="flex flex-wrap items-center gap-2 text-xs font-mono uppercase tracking-wider text-sage">
+              <span>March 2024 – July 2025</span>
+              <span>·</span>
+              <span>Ajman, United Arab Emirates</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold mt-1">Accountant · Mahir Interiors</h3>
+            <ul class="mt-3 space-y-2 text-sm sm:text-base leading-relaxed list-disc pl-5" style="color: var(--text-muted);">
+              <li>Coordinated procurement activities, tracked material inventory across active interior fit-out projects, and maintained structured project-wise financial documentation for cost analysis.</li>
+              <li>Managed monthly payroll processing (overtime &amp; deductions), reconciled daily cash and bank transactions, and prepared financial reports in <strong class="font-medium" style="color: var(--text-main);">Tally ERP</strong> and <strong class="font-medium" style="color: var(--text-main);">Microsoft Excel</strong>.</li>
+              <li>Monitored project budgets, controlled operational expenses, and coordinated with site supervisors on workforce attendance and labor compliance.</li>
+            </ul>
+          </article>
+
+          <!-- Entry 3: Assistant Supervisor - The Clove Restaurant & Grill -->
+          <article class="relative group">
+            <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-sage/70"></span>
+            <div class="flex flex-wrap items-center gap-2 text-xs font-mono uppercase tracking-wider text-sage">
+              <span>July 2022 – June 2023</span>
+              <span>·</span>
+              <span>Lahore, Pakistan</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold mt-1">Assistant Supervisor · The Clove Restaurant &amp; Grill</h3>
+            <ul class="mt-3 space-y-2 text-sm sm:text-base leading-relaxed list-disc pl-5" style="color: var(--text-muted);">
+              <li>Oversaw daily stock levels and conducted systematic inventory checks to minimize spoilage and optimize ingredient utilization.</li>
+              <li>Coordinated directly with suppliers to resolve delivery discrepancies, verify vendor invoices, and maintain uninterrupted daily operations.</li>
+              <li>Supervised peak-hour floor operations, reconciled daily POS sales reports, and upheld strict hygiene and workplace safety standards.</li>
+            </ul>
+          </article>
+
+          <!-- Entry 4: Logistics Assistant - Leopards Courier Services -->
+          <article class="relative group">
+            <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-sage/70"></span>
+            <div class="flex flex-wrap items-center gap-2 text-xs font-mono uppercase tracking-wider text-sage">
+              <span>August 2018 – May 2022</span>
+              <span>·</span>
+              <span>Lahore, Pakistan</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold mt-1">Logistics Assistant · Leopards Courier Services</h3>
+            <ul class="mt-3 space-y-2 text-sm sm:text-base leading-relaxed list-disc pl-5" style="color: var(--text-muted);">
+              <li>Managed daily parcel intake, route sorting, barcode labeling, and outbound dispatch preparation in compliance with handling and safety protocols.</li>
+              <li>Processed customer shipments and bookings using courier management software with accurate scan tracking and manifest record maintenance.</li>
+              <li>Coordinated with regional hub and head office teams to resolve transit delays and support customers with real-time shipment inquiries.</li>
+            </ul>
+          </article>
+
+          <!-- Entry 5: B.S. Insurance & Risk Management -->
+          <article class="relative group">
+            <span class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-3.5 h-3.5 rounded-full bg-terracotta/80"></span>
+            <div class="flex flex-wrap items-center gap-2 text-xs font-mono uppercase tracking-wider text-terracotta">
+              <span>Bachelor’s Degree</span>
+              <span>·</span>
+              <span>Pakistan</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-terracotta/10 text-terracotta font-sans normal-case font-semibold">Education</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold mt-1">B.S. in Insurance &amp; Risk Management</h3>
+            <p class="text-sm font-medium mt-0.5" style="color: var(--text-muted);">University of the Punjab</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         4. FLOATING SKILL CONSTELLATION & LANGUAGES
+         ===================================================================== -->
+    <section id="toolkit" class="reveal-section py-16 sm:py-24 px-4 sm:px-6 border-t" style="border-color: var(--border-subtle);">
+      <div class="max-w-5xl mx-auto">
+        <div class="max-w-2xl mb-12">
+          <span class="font-mono text-xs uppercase tracking-widest text-terracotta" data-i18n="tool_eyebrow">Operational Toolkit</span>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mt-1" data-i18n="tool_heading">
+            Systems, Processes <span class="text-sage">&amp; Languages.</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Technical & Systems -->
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-widest mb-4" style="color: var(--text-muted);">Technical &amp; ERP Systems</h3>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-sage hover:text-sage" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">MS Excel (Pivot Tables, Charts, Budgets)</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-sage hover:text-sage" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Tally ERP</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-sage hover:text-sage" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Courier Management System</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-sage hover:text-sage" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Inventory Tracking</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-sage hover:text-sage" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Reporting &amp; Data Analysis</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-sage hover:text-sage" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">MS Word &amp; PowerPoint</span>
+            </div>
+          </div>
+
+          <!-- Administrative & Business -->
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-widest mb-4" style="color: var(--text-muted);">Operations &amp; Coordination</h3>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-terracotta hover:text-terracotta" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Project Coordination</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-terracotta hover:text-terracotta" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Documentation Control</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-terracotta hover:text-terracotta" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Process Support</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-terracotta hover:text-terracotta" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Stakeholder Communication</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-terracotta hover:text-terracotta" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Structured Reporting</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium border transition-all hover:border-terracotta hover:text-terracotta" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">Agenda Preparation</span>
+            </div>
+          </div>
+
+          <!-- Working Style -->
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-widest mb-4" style="color: var(--text-muted);">Working Style</h3>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium bg-sage/10 text-sage">Attention to Detail</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium bg-sage/10 text-sage">Structured Working Style</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium bg-sage/10 text-sage">Time Management</span>
+              <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium bg-sage/10 text-sage">Reliability</span>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-widest mb-4" style="color: var(--text-muted);">Languages</h3>
+            <div class="flex flex-wrap gap-3">
+              <div class="skill-pill px-4 py-2 rounded-full text-sm border flex items-center gap-2" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+                <span class="font-semibold">English</span>
+                <span class="font-mono text-xs px-2 py-0.5 rounded-full bg-sage/15 text-sage">C1</span>
+              </div>
+              <div class="skill-pill px-4 py-2 rounded-full text-sm border flex items-center gap-2" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+                <span class="font-semibold">German</span>
+                <span class="font-mono text-xs px-2 py-0.5 rounded-full bg-terracotta/15 text-terracotta">A2</span>
+              </div>
+              <div class="skill-pill px-4 py-2 rounded-full text-sm border flex items-center gap-2" style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+                <span class="font-semibold">Urdu</span>
+                <span class="font-mono text-xs px-2 py-0.5 rounded-full bg-sage/15 text-sage">Native</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         5. "OFF THE CLOCK" INTERACTIVE LOUNGE (PURELY FOR FUN!)
+         ===================================================================== -->
+    <section id="lounge" class="reveal-section py-20 sm:py-28 px-4 sm:px-6 text-[#F6F4F0] rounded-[2.5rem] sm:rounded-[3.5rem] mx-2 sm:mx-6 my-6 shadow-xl transition-colors duration-300"
+             style="background-color: var(--lounge-bg);">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-widest text-terracotta-light">No Spreadsheets Allowed</span>
+            <h2 class="text-3xl sm:text-5xl font-bold tracking-tight mt-1">
+              Off the <span class="text-sage-light">Clock.</span>
+            </h2>
+          </div>
+          <p class="text-sm text-white/70 max-w-sm">
+            When the workday wraps up, it’s all about a good game of darts, following cricket, and unwinding with music. Give them a try below.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <!-- Interactive Mini Dartboard -->
+          <div class="lg:col-span-6 rounded-[2rem] p-6 sm:p-8 bg-white/[0.04] border border-white/10 flex flex-col justify-between">
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div>
+                <h3 class="text-xl font-bold">Darts</h3>
+                <p class="text-xs text-white/60">Click or press Space/Enter on the board to throw</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="text-right">
+                  <span class="block text-[10px] font-mono uppercase tracking-wider text-white/50">Score</span>
+                  <span id="dart-score" class="font-mono text-lg font-bold text-terracotta-light">0</span>
+                </div>
+                <button id="dart-reset" type="button" class="px-3 py-1.5 rounded-full text-xs font-medium bg-white/10 hover:bg-white/20 transition-colors">
+                  Reset
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center my-2">
+              <svg id="dartboard-svg" viewBox="0 0 240 240" class="w-56 h-56 sm:w-64 sm:h-64 select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-terracotta rounded-full" role="button" tabindex="0" aria-label="Interactive Dartboard — click or press Space or Enter to throw a dart">
+                <!-- Outer Rim -->
+                <circle cx="120" cy="120" r="114" fill="#141618" stroke="rgba(255,255,255,0.16)" stroke-width="2" />
+
+                <!-- 20 Alternating Contrasting Sector Beds (Double, Outer Single, Treble, Inner Single) -->
+                <g id="dartboard-sectors"></g>
+
+                <!-- Outer Bull (r: 8 to 18) & Bullseye (r: 0 to 8) -->
+                <circle cx="120" cy="120" r="18" fill="#1E7B48" stroke="rgba(255,255,255,0.28)" stroke-width="0.9" />
+                <circle cx="120" cy="120" r="8" fill="#C83232" stroke="rgba(255,255,255,0.35)" stroke-width="0.9" />
+
+                <!-- Wire Rings, Divider Lines & Rim Numbers Layer -->
+                <g id="dartboard-wires"></g>
+
+                <!-- Thrown Dart Pins Layer -->
+                <g id="dart-pins"></g>
+              </svg>
+            </div>
+
+            <p id="dart-feedback" class="text-center font-mono text-xs text-white/70 mt-2">
+              3 darts in hand — aim for the bullseye!
+            </p>
+          </div>
+
+          <!-- Right Column: Cricket & Ambient Music -->
+          <div class="lg:col-span-6 flex flex-col gap-6">
+            <!-- Cricket Vibe Card -->
+            <div class="rounded-[2rem] p-6 sm:p-8 bg-white/[0.04] border border-white/10 flex-1 flex flex-col justify-between">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <span class="font-mono text-[11px] uppercase tracking-widest text-sage-light">Weekend Ritual</span>
+                  <h3 class="text-xl font-bold mt-1">Cricket</h3>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-mono bg-sage/25 text-sage-light">
+                  T20 &amp; Test
+                </span>
+              </div>
+
+              <p id="cricket-quote" class="text-sm text-white/75 leading-relaxed my-4">
+                Nothing beats a tight final-over chase or playing a weekend tape-ball match with friends.
+              </p>
+
+              <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-white/10">
+                <div class="flex gap-2">
+                  <button type="button" data-shot="Cover Drive · 4 Runs!" class="cricket-shot-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/10 hover:bg-terracotta transition-colors">
+                    Cover Drive
+                  </button>
+                  <button type="button" data-shot="Lofted Straight Six · +6!" class="cricket-shot-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/10 hover:bg-terracotta transition-colors">
+                    Lofted Six
+                  </button>
+                  <button type="button" data-shot="Yorker · Clean Bowled!" class="cricket-shot-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/10 hover:bg-sage transition-colors">
+                    Yorker
+                  </button>
+                </div>
+                <span id="cricket-call" class="font-mono text-xs text-terracotta-light">Ready at the crease</span>
+              </div>
+            </div>
+
+            <!-- Ambient Music Equalizer Card -->
+            <div class="rounded-[2rem] p-6 sm:p-8 bg-white/[0.04] border border-white/10 flex-1 flex flex-col justify-between">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <span class="font-mono text-[11px] uppercase tracking-widest text-terracotta-light">Unwind &amp; Reset</span>
+                  <h3 class="text-xl font-bold mt-1">Music</h3>
+                </div>
+
+                <button id="music-toggle-btn" type="button" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-terracotta hover:bg-terracotta-dark text-white text-xs font-semibold transition-colors">
+                  <span id="music-btn-label">Play Lo-Fi Chord</span>
+                </button>
+              </div>
+
+              <p class="text-sm text-white/75 leading-relaxed my-4">
+                From acoustic tracks to chill evening playlists—music is my go-to way to recharge after a busy shift or study session.
+              </p>
+
+              <!-- Animated Equalizer Bars -->
+              <div id="eq-container" class="flex items-end gap-1.5 h-8 pt-2" aria-hidden="true">
+                <span class="eq-bar w-full h-full rounded-full bg-sage-light" style="animation-delay: 0.05s;"></span>
+                <span class="eq-bar w-full h-full rounded-full bg-terracotta-light" style="animation-delay: 0.2s;"></span>
+                <span class="eq-bar w-full h-full rounded-full bg-sage-light" style="animation-delay: 0.35s;"></span>
+                <span class="eq-bar w-full h-full rounded-full bg-white/60" style="animation-delay: 0.15s;"></span>
+                <span class="eq-bar w-full h-full rounded-full bg-terracotta-light" style="animation-delay: 0.4s;"></span>
+                <span class="eq-bar w-full h-full rounded-full bg-sage-light" style="animation-delay: 0.25s;"></span>
+                <span class="eq-bar w-full h-full rounded-full bg-white/60" style="animation-delay: 0.1s;"></span>
+                <span class="eq-bar w-full h-full rounded-full bg-terracotta-light" style="animation-delay: 0.3s;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         6. DIRECT EMAIL CONTACT & MESSAGE COMPOSER (NO PHONE NUMBER)
+         ===================================================================== -->
+    <section id="contact" class="reveal-section py-20 sm:py-28 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+          <!-- Left Column: Direct Info & Quick Actions -->
+          <div class="lg:col-span-5 space-y-6 text-left">
+            <span class="font-mono text-xs uppercase tracking-widest text-sage" data-i18n="contact_eyebrow">Get in Touch</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight" data-i18n="contact_heading">
+              Let’s connect over <span class="text-terracotta">operations or opportunities.</span>
+            </h2>
+            <p class="text-sm sm:text-base leading-relaxed" style="color: var(--text-muted);" data-i18n="contact_desc">
+              Currently based in Wildau, Germany and open to working student roles, internships, and opportunities in logistics, warehouse operations, and supply chain support.
+            </p>
+
+            <!-- Email Pill & Copy Button -->
+            <div class="pt-2 flex flex-wrap items-center gap-3">
+              <a href="mailto:chsohaib592@gmail.com"
+                 class="magnetic-btn inline-flex items-center gap-2.5 px-5 py-3 rounded-full bg-sage text-white text-sm font-semibold shadow-sm hover:bg-sage-dark transition-all">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <span>chsohaib592@gmail.com</span>
+              </a>
+
+              <button id="copy-email-btn" type="button"
+                      class="no-print magnetic-btn inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-semibold border transition-all hover:border-terracotta hover:text-terracotta"
+                      style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                </svg>
+                <span data-i18n="copy_email">Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Direct On-Page Email Composer -->
+          <div class="lg:col-span-7">
+            <form id="direct-email-form" novalidate
+                  class="rounded-[2rem] p-6 sm:p-8 border shadow-sm space-y-5"
+                  style="background-color: var(--bg-surface); border-color: var(--border-subtle);">
+              <div class="flex items-center justify-between gap-2 pb-3 border-b" style="border-color: var(--border-subtle);">
+                <div>
+                  <h3 class="text-lg font-bold" data-i18n="form_title">Write a Direct Message</h3>
+                  <p class="text-xs mt-0.5" style="color: var(--text-muted);" data-i18n="form_sub">Compose your note right here and send it straight to my inbox.</p>
+                </div>
+                <span class="font-mono text-[11px] px-3 py-1 rounded-full bg-sage/15 text-sage">Direct</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="sender-name" class="block text-xs font-mono uppercase tracking-wider mb-1.5" style="color: var(--text-muted);" data-i18n="lbl_name">Your Name</label>
+                  <input id="sender-name" name="name" type="text" required placeholder="e.g. Anna Weber"
+                         class="w-full px-4 py-3 rounded-2xl text-sm border outline-none transition-colors focus:border-sage"
+                         style="background-color: var(--bg-subtle); border-color: var(--border-subtle); color: var(--text-main);" />
+                </div>
+
+                <div>
+                  <label for="sender-email" class="block text-xs font-mono uppercase tracking-wider mb-1.5" style="color: var(--text-muted);" data-i18n="lbl_email">Your Email</label>
+                  <input id="sender-email" name="email" type="email" required placeholder="name@company.de"
+                         class="w-full px-4 py-3 rounded-2xl text-sm border outline-none transition-colors focus:border-sage"
+                         style="background-color: var(--bg-subtle); border-color: var(--border-subtle); color: var(--text-main);" />
+                </div>
+              </div>
+
+              <div>
+                <label for="email-subject" class="block text-xs font-mono uppercase tracking-wider mb-1.5" style="color: var(--text-muted);" data-i18n="lbl_subject">Subject</label>
+                <input id="email-subject" name="subject" type="text" placeholder="Subject"
+                       class="w-full px-4 py-3 rounded-2xl text-sm border outline-none transition-colors focus:border-sage"
+                       style="background-color: var(--bg-subtle); border-color: var(--border-subtle); color: var(--text-main);" />
+              </div>
+
+              <div>
+                <label for="email-message" class="block text-xs font-mono uppercase tracking-wider mb-1.5" style="color: var(--text-muted);" data-i18n="lbl_message">Message</label>
+                <textarea id="email-message" name="message" rows="4" required placeholder="Write your message..."
+                          class="w-full px-4 py-3 rounded-2xl text-sm border outline-none transition-colors focus:border-sage resize-y"
+                          style="background-color: var(--bg-subtle); border-color: var(--border-subtle); color: var(--text-main);"></textarea>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                <p id="form-status" class="text-xs font-medium" style="color: var(--text-muted);" data-i18n="form_hint">
+                  Opens your mail client pre-filled or copies your draft automatically.
+                </p>
+
+                <button type="submit"
+                        class="magnetic-btn inline-flex items-center gap-2 px-6 py-3 rounded-full bg-terracotta hover:bg-terracotta-dark text-white text-sm font-semibold shadow-sm transition-all">
+                  <span data-i18n="btn_send">Send Message</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimalist Footer -->
+  <footer class="relative z-10 py-8 px-4 sm:px-6 border-t text-xs" style="border-color: var(--border-subtle); color: var(--text-muted);">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>© 2026 Muhammad Sohaib Akram · Wildau, Germany</p>
+      <p class="font-mono">chsohaib592@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- Non-Blocking Toast Notification -->
+  <div id="toast" role="status" aria-live="polite" class="fixed bottom-5 right-5 z-50 translate-y-20 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="flex items-center gap-2.5 px-5 py-3 rounded-full bg-[#1E2022] text-[#F6F4F0] text-xs sm:text-sm font-medium shadow-xl border border-white/10">
+      <span class="w-2 h-2 rounded-full bg-sage-light"></span>
+      <span id="toast-text">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <!-- Minimalist Precision Dot & Spring-Lagging Outer Ring Cursor (Desktop Fine Pointers Only) -->
+  <div id="cursor-dot" class="hidden" aria-hidden="true"></div>
+  <div id="cursor-ring" class="hidden" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       SELF-CONTAINED VANILLA JAVASCRIPT
+       ===================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // -------------------------------------------------------------------
+      // 1. Light / Dark Mode Toggle (Dark by Default)
+      // -------------------------------------------------------------------
+      const htmlEl = document.documentElement;
+      const themeToggleBtn = document.getElementById('theme-toggle');
+      const iconSun = document.getElementById('icon-sun');
+      const iconMoon = document.getElementById('icon-moon');
+
+      function applyTheme(theme) {
+        const isDark = theme === 'dark';
+        htmlEl.classList.toggle('dark', isDark);
+        if (iconSun && iconMoon) {
+          iconSun.classList.toggle('hidden', !isDark);
+          iconMoon.classList.toggle('hidden', isDark);
+        }
+        try {
+          localStorage.setItem('msa-theme', theme);
+        } catch (err) {}
+      }
+
+      let savedTheme = 'dark';
+      try {
+        savedTheme = localStorage.getItem('msa-theme') || 'dark';
+      } catch (err) {}
+      applyTheme(savedTheme);
+
+      if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+          const nextTheme = htmlEl.classList.contains('dark') ? 'light' : 'dark';
+          applyTheme(nextTheme);
+        });
+      }
+
+      // -------------------------------------------------------------------
+      // 1b. Bilingual EN / DE Switcher & Interactive PDF CV Dropdown
+      // -------------------------------------------------------------------
+      const langToggleBtn = document.getElementById('lang-toggle');
+      const cvDropdownWrapper = document.getElementById('cv-dropdown-wrapper');
+      const downloadCvBtn = document.getElementById('download-cv-btn');
+      const cvDropdownMenu = document.getElementById('cv-dropdown-menu');
+      let currentLang = 'en';
+
+      const TRANSLATIONS = {
+        en: {
+          nav_trajectory: 'Trajectory',
+          nav_experience: 'Experience',
+          nav_toolkit: 'Toolkit',
+          nav_lounge: 'Off the Clock',
+          nav_contact: 'Contact',
+          mob_trajectory: 'Trajectory (PK → UAE → DE)',
+          mob_experience: 'Experience & Education',
+          mob_toolkit: 'Skills & Languages',
+          mob_lounge: 'Off the Clock (Darts, Cricket & Music)',
+          mob_contact: 'Say Hello',
+          hero_badge: 'M.A. European Business Management · TH Wildau, Germany',
+          hero_intro: 'I bring six years of hands-on experience keeping logistics, inventory, and financial operations running smoothly across <strong class="font-semibold" style="color: var(--text-main);">Pakistan</strong>, the <strong class="font-semibold" style="color: var(--text-main);">UAE</strong>, and now <strong class="font-semibold" style="color: var(--text-main);">Germany</strong>. Currently pursuing my M.A. in European Business Management at TH Wildau, I thrive where structured processes meet day-to-day operational execution.',
+          cta_route: 'Explore My Route',
+          cta_cv: 'Save CV (PDF) ▾',
+          cv_menu_header: 'Select CV Language',
+          cv_opt_en: 'English CV (PDF)',
+          cv_opt_de: 'German CV / Lebenslauf (PDF)',
+          cta_lounge: 'Off the Clock',
+          stat_countries_val: '3 Countries',
+          stat_countries_lbl: 'PK · UAE · Germany',
+          stat_years_val: '6+ Years',
+          stat_years_lbl: 'Logistics, Ops & Finance',
+          stat_lang_lbl: 'English & German',
+          medallion_tag: 'Operations & Supply Chain',
+          medallion_desc: 'Precision in dispatch, stock control & structured reporting.',
+          traj_eyebrow: 'Global Trajectory',
+          traj_heading: 'Cross-Border Experience <span class="text-sage">&amp; Global Footprint.</span>',
+          traj_sub: 'Select any waypoint on the flight path to inspect each chapter of my cross-border career.',
+          exp_eyebrow: 'Career & Academic Path',
+          exp_heading: 'Experience <span class="text-terracotta">&amp; Education.</span>',
+          tool_eyebrow: 'Operational Toolkit',
+          tool_heading: 'Systems, Processes <span class="text-sage">&amp; Languages.</span>',
+          contact_eyebrow: 'Get in Touch',
+          contact_heading: 'Let’s connect over <span class="text-terracotta">operations or opportunities.</span>',
+          contact_desc: 'Currently based in Wildau, Germany and open to working student roles, internships, and opportunities in logistics, warehouse operations, and supply chain support.',
+          copy_email: 'Copy Email',
+          form_title: 'Write a Direct Message',
+          form_sub: 'Compose your note right here and send it straight to my inbox.',
+          lbl_name: 'Your Name',
+          lbl_email: 'Your Email',
+          lbl_subject: 'Subject',
+          lbl_message: 'Message',
+          form_hint: 'Opens your mail client pre-filled or copies your draft automatically.',
+          btn_send: 'Send Message'
+        },
+        de: {
+          nav_trajectory: 'Werdegang',
+          nav_experience: 'Erfahrung',
+          nav_toolkit: 'Kenntnisse',
+          nav_lounge: 'Freizeit',
+          nav_contact: 'Kontakt',
+          mob_trajectory: 'Werdegang (PK → VAE → DE)',
+          mob_experience: 'Berufserfahrung & Studium',
+          mob_toolkit: 'Fähigkeiten & Sprachen',
+          mob_lounge: 'Freizeit (Darts, Cricket & Musik)',
+          mob_contact: 'Nachricht senden',
+          hero_badge: 'M.A. European Business Management · TH Wildau, Deutschland',
+          hero_intro: 'Mit sechs Jahren praktischer Erfahrung sorge ich für reibungslose Abläufe in Logistik, Bestandsführung und Finanzbuchhaltung – von <strong class="font-semibold" style="color: var(--text-main);">Pakistan</strong> über die <strong class="font-semibold" style="color: var(--text-main);">VAE</strong> bis nach <strong class="font-semibold" style="color: var(--text-main);">Deutschland</strong>. Derzeit absolviere ich meinen Master in European Business Management an der TH Wildau und verbinde strukturierte Prozesse mit zuverlässiger Umsetzung im Alltag.',
+          cta_route: 'Stationen entdecken',
+          cta_cv: 'Lebenslauf (PDF) ▾',
+          cv_menu_header: 'Lebenslauf-Sprache wählen',
+          cv_opt_en: 'Englischer Lebenslauf (PDF)',
+          cv_opt_de: 'Deutscher Lebenslauf (PDF)',
+          cta_lounge: 'Nach Feierabend',
+          stat_countries_val: '3 Länder',
+          stat_countries_lbl: 'PK · VAE · Deutschland',
+          stat_years_val: '6+ Jahre',
+          stat_years_lbl: 'Logistik, Ops & Finanzen',
+          stat_lang_lbl: 'Englisch & Deutsch',
+          medallion_tag: 'Operations & Supply Chain',
+          medallion_desc: 'Präzision bei Versand, Bestandskontrolle & strukturiertem Reporting.',
+          traj_eyebrow: 'Internationale Stationen',
+          traj_heading: 'Internationale Erfahrung <span class="text-sage">&amp; Globale Stationen.</span>',
+          traj_sub: 'Wählen Sie einen Wegpunkt auf der Karte, um die jeweilige Station anzusehen.',
+          exp_eyebrow: 'Beruflicher & Akademischer Weg',
+          exp_heading: 'Berufserfahrung <span class="text-terracotta">&amp; Studium.</span>',
+          tool_eyebrow: 'Kompetenzprofil',
+          tool_heading: 'Systeme, Prozesse <span class="text-sage">&amp; Sprachen.</span>',
+          contact_eyebrow: 'Kontakt aufnehmen',
+          contact_heading: 'Lassen Sie uns über <span class="text-terracotta">Logistik &amp; Chancen sprechen.</span>',
+          contact_desc: 'Derzeit wohnhaft in Wildau, Deutschland – offen für Werkstudententätigkeiten, Praktika und Einstiegspositionen in Logistik, Lagerverwaltung und Supply Chain.',
+          copy_email: 'E-Mail kopieren',
+          form_title: 'Direktnachricht schreiben',
+          form_sub: 'Verfassen Sie Ihre Nachricht direkt hier für mein Postfach.',
+          lbl_name: 'Ihr Name',
+          lbl_email: 'Ihre E-Mail',
+          lbl_subject: 'Betreff',
+          lbl_message: 'Nachricht',
+          form_hint: 'Öffnet Ihr E-Mail-Programm vorausgefüllt für chsohaib592@gmail.com.',
+          btn_send: 'Nachricht senden'
+        }
+      };
+
+      function applyLanguage(lang) {
+        currentLang = lang;
+        htmlEl.setAttribute('lang', lang);
+        const dict = TRANSLATIONS[lang] || TRANSLATIONS.en;
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key]) {
+            el.innerHTML = dict[key];
+          }
+        });
+        if (langToggleBtn) {
+          langToggleBtn.innerHTML = lang === 'en'
+            ? '<span class="text-terracotta">EN</span> <span class="opacity-45">/</span> DE'
+            : 'EN <span class="opacity-45">/</span> <span class="text-terracotta">DE</span>';
+        }
+      }
+
+      if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', () => {
+          const next = currentLang === 'en' ? 'de' : 'en';
+          applyLanguage(next);
+          showToast(next === 'de' ? 'Sprache auf Deutsch umgestellt' : 'Switched language to English');
+        });
+      }
+
+      function setCvDropdownOpen(isOpen) {
+        if (!downloadCvBtn || !cvDropdownMenu) return;
+        downloadCvBtn.setAttribute('aria-expanded', String(isOpen));
+        cvDropdownMenu.classList.toggle('cv-open', isOpen);
+        cvDropdownMenu.classList.toggle('cv-closed', !isOpen);
+      }
+
+      if (downloadCvBtn && cvDropdownMenu) {
+        downloadCvBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isCurrentlyOpen = cvDropdownMenu.classList.contains('cv-open');
+          setCvDropdownOpen(!isCurrentlyOpen);
+        });
+
+        cvDropdownMenu.querySelectorAll('a[role="menuitem"]').forEach((item) => {
+          item.addEventListener('click', () => {
+            const isGerman = item.getAttribute('download')?.includes('_DE');
+            setCvDropdownOpen(false);
+            showToast(
+              isGerman
+                ? (currentLang === 'de' ? 'Deutscher Lebenslauf (PDF) wird heruntergeladen…' : 'Downloading German CV / Lebenslauf (PDF)…')
+                : (currentLang === 'de' ? 'Englischer Lebenslauf (PDF) wird heruntergeladen…' : 'Downloading English CV (PDF)…')
+            );
+          });
+        });
+
+        document.addEventListener('click', (e) => {
+          if (cvDropdownWrapper && !cvDropdownWrapper.contains(e.target)) {
+            setCvDropdownOpen(false);
+          }
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && cvDropdownMenu.classList.contains('cv-open')) {
+            setCvDropdownOpen(false);
+            downloadCvBtn.focus();
+          }
+        });
+      }
+
+      // -------------------------------------------------------------------
+      // 1c. Progressive Scroll-Reveal Observer
+      // -------------------------------------------------------------------
+      const revealEls = document.querySelectorAll('.reveal-section');
+      if ('IntersectionObserver' in window && revealEls.length) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.remove('reveal-pending');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        revealEls.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top > window.innerHeight * 0.9) {
+            el.classList.add('reveal-pending');
+          }
+          revealObserver.observe(el);
+        });
+      }
+
+      // -------------------------------------------------------------------
+      // 2. Mobile Menu Toggle
+      // -------------------------------------------------------------------
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          const isOpen = !mobileMenu.classList.contains('hidden');
+          mobileMenu.classList.toggle('hidden', isOpen);
+          mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // -------------------------------------------------------------------
+      // 3. Minimalist Precision Dot & Fast-Tracking Ring Cursor
+      // -------------------------------------------------------------------
+      const cursorDot = document.getElementById('cursor-dot');
+      const cursorRing = document.getElementById('cursor-ring');
+      const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+      if (isFinePointer && cursorDot && cursorRing) {
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let ringX = mouseX;
+        let ringY = mouseY;
+        let isCursorVisible = false;
+
+        cursorDot.classList.remove('hidden');
+        cursorRing.classList.remove('hidden');
+
+        window.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+          cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+
+          if (!isCursorVisible) {
+            isCursorVisible = true;
+            ringX = mouseX;
+            ringY = mouseY;
+            cursorDot.style.opacity = '1';
+            cursorRing.style.opacity = '1';
+          }
+        }, { passive: true });
+
+        document.addEventListener('mouseleave', () => {
+          isCursorVisible = false;
+          cursorDot.style.opacity = '0';
+          cursorRing.style.opacity = '0';
+        });
+
+        window.addEventListener('mousedown', (e) => {
+          const ripple = document.createElement('div');
+          ripple.className = 'cursor-click-ripple';
+          ripple.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+          document.body.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 520);
+        });
+
+        // Reticle mode over Flight Trajectory Map & Dartboard
+        const reticleZones = document.querySelectorAll('#flight-map-svg, #dartboard-svg');
+        reticleZones.forEach((zone) => {
+          zone.addEventListener('mouseenter', () => {
+            cursorRing.classList.remove('cursor-hover');
+            cursorRing.classList.add('cursor-reticle');
+          });
+          zone.addEventListener('mouseleave', () => {
+            cursorRing.classList.remove('cursor-reticle');
+          });
+        });
+
+        // Hover expansion over interactive elements
+        const interactiveSelector = 'a, button, .skill-pill, .map-waypoint';
+        document.addEventListener('mouseover', (e) => {
+          if (cursorRing.classList.contains('cursor-reticle')) return;
+          if (e.target.closest(interactiveSelector)) {
+            cursorDot.classList.add('cursor-hover');
+            cursorRing.classList.add('cursor-hover');
+          }
+        });
+        document.addEventListener('mouseout', (e) => {
+          if (e.target.closest(interactiveSelector)) {
+            cursorDot.classList.remove('cursor-hover');
+            cursorRing.classList.remove('cursor-hover');
+          }
+        });
+
+        function animateCursorRing() {
+          ringX += (mouseX - ringX) * 0.45;
+          ringY += (mouseY - ringY) * 0.45;
+          cursorRing.style.transform = `translate3d(${ringX.toFixed(2)}px, ${ringY.toFixed(2)}px, 0)`;
+          requestAnimationFrame(animateCursorRing);
+        }
+        requestAnimationFrame(animateCursorRing);
+      } else {
+        document.documentElement.style.cursor = 'auto';
+        document.body.style.cursor = 'auto';
+      }
+
+      // -------------------------------------------------------------------
+      // 4. Interactive Flight Trajectory Map (Lahore -> Ajman -> Wildau)
+      // -------------------------------------------------------------------
+      const STOP_DATA = {
+        pk: {
+          period: '2018 – 2023',
+          location: 'Lahore, Pakistan',
+          title: 'B.S. Insurance & Risk Management · Logistics & Operations',
+          desc: 'Built my operational foundation at Leopards Courier Services (parcel intake, dispatch, shipment tracking) and The Clove Restaurant & Grill (inventory checks, supplier coordination, daily POS reporting) while completing my B.S. at University of the Punjab.',
+          coords: { x: 702, y: 212 }
+        },
+        uae: {
+          period: 'March 2024 – July 2025',
+          location: 'Ajman, United Arab Emirates',
+          title: 'Accountant · Mahir Interiors',
+          desc: 'Coordinated procurement, tracked project-wise material inventory, managed payroll and daily reconciliations in Tally ERP & MS Excel, and monitored operational budgets alongside site supervisors.',
+          coords: { x: 512, y: 254 }
+        },
+        de: {
+          period: 'Present – Expected 2027',
+          location: 'Brandenburg, Germany',
+          title: 'M.A. European Business Management · Technische Hochschule Wildau',
+          desc: 'Advancing international business strategy, European regulatory frameworks, and structured process management while seeking logistics, warehouse, and operations opportunities in Germany.',
+          coords: { x: 268, y: 118 }
+        }
+      };
+
+      const stopPeriodEl = document.getElementById('stop-period');
+      const stopLocationEl = document.getElementById('stop-location');
+      const stopTitleEl = document.getElementById('stop-title');
+      const stopDescEl = document.getElementById('stop-desc');
+      const stopTabBtns = document.querySelectorAll('.stop-tab-btn');
+      const planeMarkerEl = document.getElementById('flight-plane-marker');
+      let currentPlanePos = { x: 268, y: 118 };
+      let planeAnimFrame = null;
+
+      function animatePlaneTo(targetX, targetY) {
+        if (!planeMarkerEl) return;
+        if (planeAnimFrame) cancelAnimationFrame(planeAnimFrame);
+
+        const startX = currentPlanePos.x;
+        const startY = currentPlanePos.y;
+        const dx = targetX - startX;
+        const dy = targetY - startY;
+        const angleDeg = (Math.atan2(dy, dx) * 180) / Math.PI;
+        const duration = 650;
+        const startTime = performance.now();
+
+        function step(now) {
+          const t = Math.min(1, (now - startTime) / duration);
+          const ease = 1 - Math.pow(1 - t, 3);
+          const arcLift = Math.sin(t * Math.PI) * -22;
+          const x = startX + dx * ease;
+          const y = startY + dy * ease + arcLift;
+
+          currentPlanePos = { x, y };
+          planeMarkerEl.setAttribute('transform', `translate(${x.toFixed(1)}, ${y.toFixed(1)}) rotate(${angleDeg.toFixed(1)})`);
+
+          if (t < 1) {
+            planeAnimFrame = requestAnimationFrame(step);
+          } else {
+            planeMarkerEl.setAttribute('transform', `translate(${targetX}, ${targetY}) rotate(0)`);
+          }
+        }
+        planeAnimFrame = requestAnimationFrame(step);
+      }
+
+      function selectStop(stopKey) {
+        const data = STOP_DATA[stopKey];
+        if (!data) return;
+
+        if (stopPeriodEl) stopPeriodEl.textContent = data.period;
+        if (stopLocationEl) stopLocationEl.textContent = data.location;
+        if (stopTitleEl) stopTitleEl.textContent = data.title;
+        if (stopDescEl) stopDescEl.textContent = data.desc;
+
+        if (data.coords) {
+          animatePlaneTo(data.coords.x, data.coords.y);
+        }
+
+        stopTabBtns.forEach((btn) => {
+          const isActive = btn.getAttribute('data-stop-btn') === stopKey;
+          btn.classList.toggle('bg-sage', isActive);
+          btn.classList.toggle('text-white', isActive);
+          btn.classList.toggle('border-sage', isActive);
+        });
+      }
+
+      stopTabBtns.forEach((btn) => {
+        btn.addEventListener('click', () => selectStop(btn.getAttribute('data-stop-btn')));
+      });
+
+      document.querySelectorAll('.map-waypoint').forEach((wp) => {
+        const key = wp.getAttribute('data-stop');
+        wp.addEventListener('click', () => selectStop(key));
+        wp.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            selectStop(key);
+          }
+        });
+      });
+
+      // -------------------------------------------------------------------
+      // 5. Accurate 20-Sector Interactive Mini Dartboard Game
+      // -------------------------------------------------------------------
+      const dartboardSvg = document.getElementById('dartboard-svg');
+      const dartboardSectors = document.getElementById('dartboard-sectors');
+      const dartboardWires = document.getElementById('dartboard-wires');
+      const dartPinsGroup = document.getElementById('dart-pins');
+      const dartScoreEl = document.getElementById('dart-score');
+      const dartFeedbackEl = document.getElementById('dart-feedback');
+      const dartResetBtn = document.getElementById('dart-reset');
+
+      // Standard clockwise dartboard sequence starting at top (12 o'clock = 20)
+      const DART_SECTORS = [20, 1, 18, 4, 13, 6, 10, 15, 2, 17, 3, 19, 7, 16, 8, 11, 14, 9, 12, 5];
+
+      // Helper to build an SVG annular wedge path between rInner and rOuter
+      function createRingWedgePath(cx, cy, rInner, rOuter, startDeg, endDeg) {
+        const startRad = (startDeg * Math.PI) / 180;
+        const endRad = (endDeg * Math.PI) / 180;
+        const x1Outer = cx + rOuter * Math.cos(startRad);
+        const y1Outer = cy + rOuter * Math.sin(startRad);
+        const x2Outer = cx + rOuter * Math.cos(endRad);
+        const y2Outer = cy + rOuter * Math.sin(endRad);
+        const x2Inner = cx + rInner * Math.cos(endRad);
+        const y2Inner = cy + rInner * Math.sin(endRad);
+        const x1Inner = cx + rInner * Math.cos(startRad);
+        const y1Inner = cy + rInner * Math.sin(startRad);
+
+        return `M ${x1Outer.toFixed(2)} ${y1Outer.toFixed(2)} ` +
+               `A ${rOuter} ${rOuter} 0 0 1 ${x2Outer.toFixed(2)} ${y2Outer.toFixed(2)} ` +
+               `L ${x2Inner.toFixed(2)} ${y2Inner.toFixed(2)} ` +
+               `A ${rInner} ${rInner} 0 0 0 ${x1Inner.toFixed(2)} ${y1Inner.toFixed(2)} Z`;
+      }
+
+      // Draw alternating contrasting colors for all 20 sectors + crisp wire rings & numbers
+      if (dartboardSectors && dartboardWires) {
+        let sectorsMarkup = '';
+        let wiresMarkup = '';
+
+        DART_SECTORS.forEach((num, idx) => {
+          const startDeg = -90 - 9 + idx * 18;
+          const endDeg = startDeg + 18;
+          const isEven = idx % 2 === 0;
+
+          const ringAccentColor = isEven ? '#C83232' : '#1E7B48';
+          const singleBedColor = isEven ? '#1B1E20' : '#EAE5D9';
+
+          // Double Ring (r: 86 -> 96)
+          sectorsMarkup += `<path d="${createRingWedgePath(120, 120, 86, 96, startDeg, endDeg)}" fill="${ringAccentColor}" />`;
+          // Outer Single Bed (r: 58 -> 86)
+          sectorsMarkup += `<path d="${createRingWedgePath(120, 120, 58, 86, startDeg, endDeg)}" fill="${singleBedColor}" />`;
+          // Treble Ring (r: 48 -> 58)
+          sectorsMarkup += `<path d="${createRingWedgePath(120, 120, 48, 58, startDeg, endDeg)}" fill="${ringAccentColor}" />`;
+          // Inner Single Bed (r: 18 -> 48)
+          sectorsMarkup += `<path d="${createRingWedgePath(120, 120, 18, 48, startDeg, endDeg)}" fill="${singleBedColor}" />`;
+
+          // Sector radial wire divider
+          const dividerRad = (startDeg * Math.PI) / 180;
+          const x1 = 120 + 18 * Math.cos(dividerRad);
+          const y1 = 120 + 18 * Math.sin(dividerRad);
+          const x2 = 120 + 96 * Math.cos(dividerRad);
+          const y2 = 120 + 96 * Math.sin(dividerRad);
+          wiresMarkup += `<line x1="${x1.toFixed(2)}" y1="${y1.toFixed(2)}" x2="${x2.toFixed(2)}" y2="${y2.toFixed(2)}" stroke="rgba(255,255,255,0.28)" stroke-width="0.8" />`;
+
+          // Sector number on outer rim
+          const labelAngleDeg = -90 + idx * 18;
+          const labelRad = (labelAngleDeg * Math.PI) / 180;
+          const lx = 120 + 105.5 * Math.cos(labelRad);
+          const ly = 120 + 105.5 * Math.sin(labelRad);
+          wiresMarkup += `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="middle" dominant-baseline="central" fill="rgba(246,244,240,0.88)" font-size="7.5" font-family="JetBrains Mono, monospace" font-weight="600">${num}</text>`;
+        });
+
+        // Concentric wire rings separating Double, Treble, and Single beds
+        [96, 86, 58, 48].forEach((r) => {
+          wiresMarkup += `<circle cx="120" cy="120" r="${r}" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="0.8" />`;
+        });
+
+        dartboardSectors.innerHTML = sectorsMarkup;
+        dartboardWires.innerHTML = wiresMarkup;
+      }
+
+      let dartScore = 0;
+      let dartsThrown = 0;
+
+      // Convert screen client coordinates into exact SVG 240x240 viewBox coordinates
+      function clientToSvgCoords(svgEl, clientX, clientY) {
+        const pt = svgEl.createSVGPoint();
+        pt.x = clientX;
+        pt.y = clientY;
+        const ctm = svgEl.getScreenCTM();
+        if (ctm) {
+          const transformed = pt.matrixTransform(ctm.inverse());
+          return { x: transformed.x, y: transformed.y };
+        }
+        const rect = svgEl.getBoundingClientRect();
+        return {
+          x: ((clientX - rect.left) / rect.width) * 240,
+          y: ((clientY - rect.top) / rect.height) * 240
+        };
+      }
+
+      function throwDartAtSvgCoords(svgX, svgY) {
+        if (!dartboardSvg || !dartPinsGroup) return;
+
+        if (dartsThrown >= 3) {
+          dartPinsGroup.innerHTML = '';
+          dartsThrown = 0;
+          dartScore = 0;
+        }
+
+        const dx = svgX - 120;
+        const dy = svgY - 120;
+        const dist = Math.hypot(dx, dy);
+
+        // Compute clockwise angle from 12 o'clock (0 to 360 deg)
+        let angleFromTop = (Math.atan2(dy, dx) * 180) / Math.PI + 90;
+        if (angleFromTop < 0) angleFromTop += 360;
+        const sectorIndex = Math.floor(((angleFromTop + 9) % 360) / 18);
+        const sectorValue = DART_SECTORS[sectorIndex];
+
+        let pts = 0;
+        let label = 'Missed the board!';
+
+        if (dist <= 8) {
+          pts = 50;
+          label = 'BULLSEYE! +50 pts';
+        } else if (dist <= 18) {
+          pts = 25;
+          label = 'Outer Bull! +25 pts';
+        } else if (dist <= 48) {
+          pts = sectorValue;
+          label = `Single ${sectorValue}! +${pts} pts`;
+        } else if (dist <= 58) {
+          pts = sectorValue * 3;
+          label = `TREBLE ${sectorValue}! +${pts} pts`;
+        } else if (dist <= 86) {
+          pts = sectorValue;
+          label = `Single ${sectorValue}! +${pts} pts`;
+        } else if (dist <= 96) {
+          pts = sectorValue * 2;
+          label = `DOUBLE ${sectorValue}! +${pts} pts`;
+        } else if (dist <= 114) {
+          pts = 0;
+          label = 'Outer Wire Rim! 0 pts';
+        }
+
+        dartScore += pts;
+        dartsThrown += 1;
+
+        const tiltDeg = -32 + (dartsThrown - 2) * 8 + (Math.random() * 6 - 3);
+        const flightColor = dartsThrown === 1 ? '#4A6FA5' : dartsThrown === 2 ? '#4F6F64' : '#6B8FC7';
+
+        const pinWrapper = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        pinWrapper.setAttribute('transform', `translate(${svgX.toFixed(1)}, ${svgY.toFixed(1)})`);
+
+        pinWrapper.innerHTML = `
+          <g class="dart-throw-anim">
+            <!-- Shadow cast onto the dartboard -->
+            <ellipse cx="4" cy="5" rx="4.5" ry="2.2" fill="rgba(0,0,0,0.42)" />
+            <g transform="rotate(${tiltDeg.toFixed(1)})">
+              <!-- Steel Point Entering Board -->
+              <line x1="0" y1="0" x2="6" y2="0" stroke="#D8DCE0" stroke-width="1.3" stroke-linecap="round" />
+              <!-- Knurled Brass/Silver Barrel -->
+              <rect x="5.5" y="-1.8" width="9" height="3.6" rx="1.6" fill="#E6E2D8" stroke="#1E2022" stroke-width="0.6" />
+              <line x1="8" y1="-1.6" x2="8" y2="1.6" stroke="#8E949A" stroke-width="0.6" />
+              <line x1="10.5" y1="-1.6" x2="10.5" y2="1.6" stroke="#8E949A" stroke-width="0.6" />
+              <!-- Shaft -->
+              <line x1="14.5" y1="0" x2="21.5" y2="0" stroke="#2D3135" stroke-width="1.4" />
+              <!-- Tail Flights -->
+              <polygon points="19,0 26,-5.5 28.5,-4.5 25,0 28.5,4.5 26,5.5" fill="${flightColor}" stroke="#1E2022" stroke-width="0.6" />
+              <line x1="19.5" y1="0" x2="27.5" y2="0" stroke="rgba(255,255,255,0.45)" stroke-width="0.7" />
+            </g>
+            <!-- Impact Ring Pulse -->
+            <circle cx="0" cy="0" r="2.2" fill="#F6F4F0" opacity="0.85" />
+          </g>
+        `;
+        dartPinsGroup.appendChild(pinWrapper);
+
+        dartboardSvg.classList.remove('board-hit-shake');
+        void dartboardSvg.offsetWidth;
+        dartboardSvg.classList.add('board-hit-shake');
+
+        dartScoreEl.textContent = String(dartScore);
+        const remaining = 3 - dartsThrown;
+        dartFeedbackEl.textContent = remaining > 0
+          ? `${label} (${remaining} dart${remaining === 1 ? '' : 's'} left)`
+          : `${label} — Click again to start next 3-dart round`;
+      }
+
+      function throwDartAt(clientX, clientY) {
+        if (!dartboardSvg) return;
+        const { x, y } = clientToSvgCoords(dartboardSvg, clientX, clientY);
+        throwDartAtSvgCoords(x, y);
+      }
+
+      if (dartboardSvg) {
+        dartboardSvg.addEventListener('click', (e) => throwDartAt(e.clientX, e.clientY));
+        dartboardSvg.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            const spreadAngle = Math.random() * Math.PI * 2;
+            const spreadRadius = Math.random() * 58;
+            const aimX = 120 + Math.cos(spreadAngle) * spreadRadius;
+            const aimY = 102 + Math.sin(spreadAngle) * spreadRadius;
+            throwDartAtSvgCoords(aimX, aimY);
+          }
+        });
+      }
+
+      if (dartResetBtn) {
+        dartResetBtn.addEventListener('click', () => {
+          dartScore = 0;
+          dartsThrown = 0;
+          if (dartPinsGroup) dartPinsGroup.innerHTML = '';
+          if (dartScoreEl) dartScoreEl.textContent = '0';
+          if (dartFeedbackEl) dartFeedbackEl.textContent = '3 darts in hand — aim for the bullseye!';
+        });
+      }
+
+      // -------------------------------------------------------------------
+      // 6. Cricket Shot Switcher & Web Audio Lo-Fi Chord Synthesizer
+      // -------------------------------------------------------------------
+      const cricketCallEl = document.getElementById('cricket-call');
+      document.querySelectorAll('.cricket-shot-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          if (cricketCallEl) {
+            cricketCallEl.textContent = btn.getAttribute('data-shot') || 'Great shot!';
+          }
+        });
+      });
+
+      const musicToggleBtn = document.getElementById('music-toggle-btn');
+      const musicBtnLabel = document.getElementById('music-btn-label');
+      const eqContainer = document.getElementById('eq-container');
+      let audioCtx = null;
+      let chordInterval = null;
+      let isPlayingChord = false;
+
+      function triggerWarmChord() {
+        try {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContextClass) return;
+          if (!audioCtx) audioCtx = new AudioContextClass();
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+
+          // Warm Fmaj7 / Cmaj9 ambient frequencies
+          const chords = [
+            [174.61, 220.00, 261.63, 329.63],
+            [130.81, 196.00, 246.94, 293.66]
+          ];
+          const freqs = chords[Math.floor(Math.random() * chords.length)];
+          const now = audioCtx.currentTime;
+
+          freqs.forEach((freq) => {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, now);
+
+            gain.gain.setValueAtTime(0.0001, now);
+            gain.gain.exponentialRampToValueAtTime(0.03, now + 0.6);
+            gain.gain.exponentialRampToValueAtTime(0.0001, now + 3.2);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 3.3);
+          });
+        } catch (err) {
+          // Audio blocked or unsupported
+        }
+      }
+
+      if (musicToggleBtn) {
+        musicToggleBtn.addEventListener('click', () => {
+          isPlayingChord = !isPlayingChord;
+          if (isPlayingChord) {
+            eqContainer.classList.add('eq-playing');
+            musicBtnLabel.textContent = 'Pause Chord';
+            triggerWarmChord();
+            chordInterval = setInterval(triggerWarmChord, 3400);
+          } else {
+            eqContainer.classList.remove('eq-playing');
+            musicBtnLabel.textContent = 'Play Lo-Fi Chord';
+            if (chordInterval) clearInterval(chordInterval);
+          }
+        });
+      }
+
+      // -------------------------------------------------------------------
+      // 7. Copy Email with Safe Fallback & Toast Notification
+      // -------------------------------------------------------------------
+      const copyEmailBtn = document.getElementById('copy-email-btn');
+      const toastEl = document.getElementById('toast');
+      const toastTextEl = document.getElementById('toast-text');
+      let toastTimer = null;
+
+      function showToast(message) {
+        if (!toastEl || !toastTextEl) return;
+        toastTextEl.textContent = message;
+        toastEl.classList.remove('translate-y-20', 'opacity-0');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.add('translate-y-20', 'opacity-0');
+        }, 2600);
+      }
+
+      if (copyEmailBtn) {
+        copyEmailBtn.addEventListener('click', () => {
+          const email = 'chsohaib592@gmail.com';
+          const tempInput = document.createElement('input');
+          tempInput.value = email;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          try {
+            document.execCommand('copy');
+            showToast('Email copied: chsohaib592@gmail.com');
+          } catch (err) {
+            showToast('Email: chsohaib592@gmail.com');
+          }
+          document.body.removeChild(tempInput);
+        });
+      }
+
+      // -------------------------------------------------------------------
+      // 7b. Direct On-Page Email Composer Handler
+      // -------------------------------------------------------------------
+      const directEmailForm = document.getElementById('direct-email-form');
+      const formStatusEl = document.getElementById('form-status');
+
+      if (directEmailForm) {
+        directEmailForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = (document.getElementById('sender-name')?.value || '').trim();
+          const senderEmail = (document.getElementById('sender-email')?.value || '').trim();
+          const subjectInput = (document.getElementById('email-subject')?.value || '').trim();
+          const message = (document.getElementById('email-message')?.value || '').trim();
+
+          if (!name || !senderEmail || !message) {
+            if (formStatusEl) {
+              formStatusEl.textContent = 'Please fill in your name, email, and message first.';
+              formStatusEl.style.color = '#6B8FC7';
+            }
+            showToast('Please complete your name, email, and message.');
+            return;
+          }
+
+          const subject = subjectInput || `Portfolio Inquiry from ${name}`;
+          const body = `Hi Sohaib,\n\n${message}\n\nBest regards,\n${name}\n(${senderEmail})`;
+          const mailtoUrl = `mailto:chsohaib592@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+          if (formStatusEl) {
+            formStatusEl.textContent = 'Opening your email app with your message ready to send!';
+            formStatusEl.style.color = '#6F9387';
+          }
+          showToast('Opening email client for chsohaib592@gmail.com...');
+          window.location.href = mailtoUrl;
+        });
+      }
+
+      // -------------------------------------------------------------------
+      // 8. Interactive Connecting-Dots Constellation Background
+      // -------------------------------------------------------------------
+      const canvas = document.getElementById('constellation-canvas');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let width = 0;
+        let height = 0;
+        let particles = [];
+        const pointer = { x: null, y: null, radius: 145 };
+
+        function resizeCanvas() {
+          const dpr = Math.min(window.devicePixelRatio || 1, 2);
+          width = window.innerWidth;
+          height = window.innerHeight;
+          canvas.width = width * dpr;
+          canvas.height = height * dpr;
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+          const count = Math.min(72, Math.max(28, Math.floor((width * height) / 19000)));
+          particles = Array.from({ length: count }, (_, idx) => ({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 0.42,
+            vy: (Math.random() - 0.5) * 0.42,
+            r: Math.random() * 1.6 + 1.1,
+            accent: idx % 5 === 0
+          }));
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        window.addEventListener('mousemove', (e) => {
+          pointer.x = e.clientX;
+          pointer.y = e.clientY;
+        }, { passive: true });
+        document.addEventListener('mouseleave', () => {
+          pointer.x = null;
+          pointer.y = null;
+        });
+
+        resizeCanvas();
+
+        function drawConstellation() {
+          ctx.clearRect(0, 0, width, height);
+          const isDark = htmlEl.classList.contains('dark');
+          const dotRgb = isDark ? '143, 179, 166' : '79, 111, 100';
+          const accentRgb = '74, 111, 165';
+          const maxDist = 135;
+
+          for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            p.x += p.vx;
+            p.y += p.vy;
+
+            if (p.x < 0 || p.x > width) p.vx *= -1;
+            if (p.y < 0 || p.y > height) p.vy *= -1;
+
+            // Connect nearby dots
+            for (let j = i + 1; j < particles.length; j++) {
+              const p2 = particles[j];
+              const dx = p.x - p2.x;
+              const dy = p.y - p2.y;
+              const dist = Math.hypot(dx, dy);
+
+              if (dist < maxDist) {
+                const alpha = (1 - dist / maxDist) * (isDark ? 0.24 : 0.18);
+                ctx.beginPath();
+                ctx.strokeStyle = `rgba(${dotRgb}, ${alpha.toFixed(3)})`;
+                ctx.lineWidth = 0.85;
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.stroke();
+              }
+            }
+
+            // Connect dots to mouse pointer
+            if (pointer.x !== null && pointer.y !== null) {
+              const mdx = p.x - pointer.x;
+              const mdy = p.y - pointer.y;
+              const mDist = Math.hypot(mdx, mdy);
+              if (mDist < pointer.radius) {
+                const alpha = (1 - mDist / pointer.radius) * 0.38;
+                ctx.beginPath();
+                ctx.strokeStyle = `rgba(${accentRgb}, ${alpha.toFixed(3)})`;
+                ctx.lineWidth = 1;
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(pointer.x, pointer.y);
+                ctx.stroke();
+              }
+            }
+
+            // Draw node
+            ctx.beginPath();
+            ctx.fillStyle = p.accent
+              ? `rgba(${accentRgb}, ${isDark ? 0.55 : 0.45})`
+              : `rgba(${dotRgb}, ${isDark ? 0.5 : 0.38})`;
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fill();
+          }
+
+          requestAnimationFrame(drawConstellation);
+        }
+
+        requestAnimationFrame(drawConstellation);
+      }
+    });
+  </script>
+</body>
+</html>
